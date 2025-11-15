@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 </head>
@@ -14,7 +13,8 @@
         let counterValue = 0;
 
         incrementBtn.addEventListener('click', function() {
-            alert(`Current value before incrementing: ${counterValue}`);
+            // Show only the number value in the alert (not the full message)
+            alert(counterValue);
             counterValue++;
             counterElement.textContent = counterValue;
         });
