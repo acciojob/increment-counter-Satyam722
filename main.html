@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <p id="counter">0</p>
+    <button id="incrementBtn">Increment</button>
+    
+    <script>
+        const counterElement = document.getElementById('counter');
+        const incrementBtn = document.getElementById('incrementBtn');
+        let counterValue = 0;
 
+        incrementBtn.addEventListener('click', function() {
+            alert(`Current value before incrementing: ${counterValue}`);
+            counterValue++;
+            counterElement.textContent = counterValue;
+        });
+    </script>
 </body>
-
 </html>
